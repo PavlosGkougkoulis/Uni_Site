@@ -3,52 +3,533 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Links by Subject</title>
+  <title>Yonka Mayonka Drive Links by Subject</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #fafafa;
       color: #333;
       margin: 0;
       padding: 20px;
+      background: url('https://raw.githubusercontent.com/PavlosGkougkoulis/Uni_Site/main/docs/1.jpg') no-repeat center fixed;
+      background-size: contain;
+      backdrop-filter: brightness(0.95);
     }
+
     h1 {
       text-align: center;
+      margin-bottom: 20px;
     }
-    .link-card {
-      background: white;
-      padding: 15px;
-      margin: 10px auto;
+
+    #search-box {
+      display: block;
+      margin: 0 auto 25px auto;
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
       border-radius: 8px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+    }
+
+    #subjects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .subject-card {
+      background: white;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 90%;
       max-width: 600px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
     }
+
+    .subject-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
     a {
       color: #007acc;
       text-decoration: none;
       font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .back {
       display: block;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Drive Links by Subject</h1>
+  <h1>Yonka Mayonka Drive Links by Subject</h1>
 
-  <div class="link-card">
-    <p><a href="https://drive.google.com/file/d/math-link" target="_blank">Mathematics</a></p>
-    <p><a href="https://drive.google.com/file/d/physics-link" target="_blank">Physics</a></p>
-    <p><a href="https://drive.google.com/file/d/chemistry-link" target="_blank">Chemistry</a></p>
-    <p><a href="https://drive.google.com/file/d/history-link" target="_blank">History</a></p>
-    <!-- Add more subjects as needed -->
+  <input type="text" id="search-box" placeholder="Search subject...">
+
+<div id="subjects">
+  <div class="subject-card">
+    <div class="subject-title">Apeirostikos Logismos 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/math-link" target="_blank">1h prospatheia</a></li>
+    </ul>
   </div>
 
-  <a href="index.html" class="back">← Back to Home</a>
+  <div class="subject-card">
+    <div class="subject-title">Grammiki Algevra kai Analytikh Geometria</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/physics-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Programmatismos 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/chemistry-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Texnikes Sxediasesi kai AUTOCAD</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Fysikh 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/biology-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Xhmeia gia Mhxanikous</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/english-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Agglika</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/math-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Apeirostikos Logismos 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/physics-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Fysikh 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/chemistry-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Geodaisia</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Mhxanikh tou apolytws Stereou</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/biology-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/biology-link2" target="_blank">2h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Pithanothtes Statistikh</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/english-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Antoxh Ylikwn 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/math-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Arithmitikes Methodoi</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/physics-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Geografika Systhmata Plhroforiwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/chemistry-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/chemistry-link" target="_blank">2h prospatheia (Eksetastikh Sept.)</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Geologia gia Mhxanikous</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Oikodomikh</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/biology-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Synitheis Diaforikes Eksiswseis</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/english-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Apeirostikos Logismos 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/math-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Antoxh Ylikwn 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/physics-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/physics-link" target="_blank">2h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/physics-link" target="_blank">3h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Kykloforiakh Mhxanikh</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/chemistry-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Merikes Diaforikes Eksiswseis</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Mhxanikh Reystwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Perivallontikh Texnikh</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Statikh 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">2h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">3h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">4h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Domika Ylika</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Edafomhxanikh 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Odopoiia 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Statikh 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">2h prospatheia (Eksetastikh Sept.)</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Sxediasmos Metaforwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subject-card">
+    <div class="subject-title">Ydravlikh</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Akadhmaikh Grafh</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Edafomhxanikh 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Metallikes Kataskeves 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Odopoiia 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Oplismeno Skyrodema 1</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">2h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Ydrologia</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Ypogeia Ydravlikh</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">2h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Themeliwseis kai Antisthrikseis</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Metallikes Kataskeves 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">2h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Odikh Asfaleia</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Oplismeno Skyrodema 2</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Perivallontikes Epiptwseis Sygkoinwniakwn Ergwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Ydreysh kai Apoxeteysh Oikismwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Viosimh Astikh Kinhtikothta</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Diaxeirish Ergwn Politikou Mhxanikou</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Diaxeirish Odikwn Ergwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Dynamikh twn Kataskevwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Thalassia Ydravlikh kai Limenika Erga</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Thalassia Ydravlikh kai Limenika Erga</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Sxediasmos kai Aksiologhsh Systhmatwn Metaforwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Sxediasmos kai Leitourgia Aeroporikwn Systhmatwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Diaxeirish Akraiwn Ydrologikwn Fainomenwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Eidika Themata Odopoiias</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Eidika Themata Odopoiias</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Eidikes Xwrikes Analyseis kai Efarmoges Thlepiskophshs se Erga Politikou Mhxanikou</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Meleth kai Kataskevh Odostromatwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-title">Systhmata Astikwn Sygkoinwniwn</div>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/history-link" target="_blank">1h prospatheia</a></li>
+    </ul>
+  </div>
+</div>
+
+   <a href="index.html" class="back">← Back to Home</a>
+
+  <script>
+    const searchBox = document.getElementById('search-box');
+    const subjectCards = document.querySelectorAll('.subject-card');
+
+    searchBox.addEventListener('keyup', () => {
+      const filter = searchBox.value.toLowerCase();
+      subjectCards.forEach(card => {
+        const title = card.querySelector('.subject-title').textContent.toLowerCase();
+        card.style.display = title.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
